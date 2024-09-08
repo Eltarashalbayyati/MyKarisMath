@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Warisan Islam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Warisan Islam</h1>
+        <form id="warisanForm">
+            <label for="gender">Jenis Kelamin Pewaris:</label>
+            <select id="gender">
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+            <label for="spouse">Jumlah Suami/Istri:</label>
+            <input type="number" id="spouse" placeholder="Jumlah Suami/Istri" min="0">
+            
+            <label for="sons">Jumlah Anak Laki-laki:</label>
+            <input type="number" id="sons" placeholder="Jumlah Anak Laki-laki" min="0">
+            
+            <label for="daughters">Jumlah Anak Perempuan:</label>
+            <input type="number" id="daughters" placeholder="Jumlah Anak Perempuan" min="0">
+            
+            <label for="father">Apakah Ayah Masih Hidup?</label>
+            <select id="father">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            
+            <label for="mother">Apakah Ibu Masih Hidup?</label>
+            <select id="mother">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            
+            <label for="grandfather">Apakah Kakek Masih Hidup?</label>
+            <select id="grandfather">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            
+            <label for="grandmother">Apakah Nenek Masih Hidup?</label>
+            <select id="grandmother">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            
+            <label for="brothers">Jumlah Saudara Laki-laki:</label>
+            <input type="number" id="brothers" placeholder="Jumlah Saudara Laki-laki" min="0">
+            
+            <label for="sisters">Jumlah Saudara Perempuan:</label>
+            <input type="number" id="sisters" placeholder="Jumlah Saudara Perempuan" min="0">
+            
+            <label for="grandsons">Jumlah Cucu Laki-laki:</label>
+            <input type="number" id="grandsons" placeholder="Jumlah Cucu Laki-laki" min="0">
+            
+            <label for="granddaughters">Jumlah Cucu Perempuan:</label>
+            <input type="number" id="granddaughters" placeholder="Jumlah Cucu Perempuan" min="0">
+            
+            <button type="button" onclick="hitungWarisan()">Hitung Warisan</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
